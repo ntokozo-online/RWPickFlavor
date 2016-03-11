@@ -31,6 +31,118 @@
     },
     {
       'type': 'directory',
+      'name': "/Users/Ntokozo/Documents/Libraries/RWPickFlavor/Build/Products/Debug-iphonesimulator/BetterBaseClasses.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "AppDelegateNotificationKeys.h",
+          'external-contents': "/Users/Ntokozo/Documents/Libraries/RWPickFlavor/Pods/BetterBaseClasses/BetterBaseClasses/Constants/AppDelegateNotificationKeys.h"
+        },
+        {
+          'type': 'file',
+          'name': "BaseAppDelegate.h",
+          'external-contents': "/Users/Ntokozo/Documents/Libraries/RWPickFlavor/Pods/BetterBaseClasses/BetterBaseClasses/Controllers/BaseAppDelegate.h"
+        },
+        {
+          'type': 'file',
+          'name': "BaseTableViewCell.h",
+          'external-contents': "/Users/Ntokozo/Documents/Libraries/RWPickFlavor/Pods/BetterBaseClasses/BetterBaseClasses/Views/BaseTableViewCell.h"
+        },
+        {
+          'type': 'file',
+          'name': "BaseTableViewController.h",
+          'external-contents': "/Users/Ntokozo/Documents/Libraries/RWPickFlavor/Pods/BetterBaseClasses/BetterBaseClasses/Controllers/BaseTableViewController.h"
+        },
+        {
+          'type': 'file',
+          'name': "BaseView.h",
+          'external-contents': "/Users/Ntokozo/Documents/Libraries/RWPickFlavor/Pods/BetterBaseClasses/BetterBaseClasses/Views/BaseView.h"
+        },
+        {
+          'type': 'file',
+          'name': "BaseViewController.h",
+          'external-contents': "/Users/Ntokozo/Documents/Libraries/RWPickFlavor/Pods/BetterBaseClasses/BetterBaseClasses/Controllers/BaseViewController.h"
+        },
+        {
+          'type': 'file',
+          'name': "BetterBaseClasses-Swift.h",
+          'external-contents': "/Users/Ntokozo/Documents/Libraries/RWPickFlavor/Build/Products/Debug-iphonesimulator/BetterBaseClasses.framework/Headers/BetterBaseClasses-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "BetterBaseClasses-umbrella.h",
+          'external-contents': "/Users/Ntokozo/Documents/Libraries/RWPickFlavor/Pods/Target Support Files/BetterBaseClasses/BetterBaseClasses-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "BetterBaseClasses.h",
+          'external-contents': "/Users/Ntokozo/Documents/Libraries/RWPickFlavor/Pods/BetterBaseClasses/BetterBaseClasses/BetterBaseClasses.h"
+        },
+        {
+          'type': 'file',
+          'name': "BetterBaseConstants.h",
+          'external-contents': "/Users/Ntokozo/Documents/Libraries/RWPickFlavor/Pods/BetterBaseClasses/BetterBaseClasses/BetterBaseConstants.h"
+        },
+        {
+          'type': 'file',
+          'name': "BetterBaseControllers.h",
+          'external-contents': "/Users/Ntokozo/Documents/Libraries/RWPickFlavor/Pods/BetterBaseClasses/BetterBaseClasses/BetterBaseControllers.h"
+        },
+        {
+          'type': 'file',
+          'name': "BetterBaseViews.h",
+          'external-contents': "/Users/Ntokozo/Documents/Libraries/RWPickFlavor/Pods/BetterBaseClasses/BetterBaseClasses/BetterBaseViews.h"
+        },
+        {
+          'type': 'file',
+          'name': "DynamicFontTableContainerViewController.h",
+          'external-contents': "/Users/Ntokozo/Documents/Libraries/RWPickFlavor/Pods/BetterBaseClasses/BetterBaseClasses/Controllers/DynamicFontTableContainerViewController.h"
+        },
+        {
+          'type': 'file',
+          'name': "DynamicFontTableViewCell.h",
+          'external-contents': "/Users/Ntokozo/Documents/Libraries/RWPickFlavor/Pods/BetterBaseClasses/BetterBaseClasses/Views/DynamicFontTableViewCell.h"
+        },
+        {
+          'type': 'file',
+          'name': "DynamicFontTableViewController.h",
+          'external-contents': "/Users/Ntokozo/Documents/Libraries/RWPickFlavor/Pods/BetterBaseClasses/BetterBaseClasses/Controllers/DynamicFontTableViewController.h"
+        },
+        {
+          'type': 'file',
+          'name': "DynamicFontView.h",
+          'external-contents': "/Users/Ntokozo/Documents/Libraries/RWPickFlavor/Pods/BetterBaseClasses/BetterBaseClasses/Views/DynamicFontView.h"
+        },
+        {
+          'type': 'file',
+          'name': "DynamicFontViewController.h",
+          'external-contents': "/Users/Ntokozo/Documents/Libraries/RWPickFlavor/Pods/BetterBaseClasses/BetterBaseClasses/Controllers/DynamicFontViewController.h"
+        },
+        {
+          'type': 'file',
+          'name': "UIView+BetterBaseClasses.h",
+          'external-contents': "/Users/Ntokozo/Documents/Libraries/RWPickFlavor/Pods/BetterBaseClasses/BetterBaseClasses/Views/UIView+BetterBaseClasses.h"
+        },
+        {
+          'type': 'file',
+          'name': "UIViewController+BetterBaseClasses.h",
+          'external-contents': "/Users/Ntokozo/Documents/Libraries/RWPickFlavor/Pods/BetterBaseClasses/BetterBaseClasses/Controllers/UIViewController+BetterBaseClasses.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/Ntokozo/Documents/Libraries/RWPickFlavor/Build/Products/Debug-iphonesimulator/BetterBaseClasses.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/Ntokozo/Documents/Libraries/RWPickFlavor/Build/Intermediates/Pods.build/Debug-iphonesimulator/BetterBaseClasses.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
       'name': "/Users/Ntokozo/Documents/Libraries/RWPickFlavor/Build/Products/Debug-iphonesimulator/MBProgressHUD.framework/Headers",
       'contents': [
         {

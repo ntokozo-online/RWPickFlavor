@@ -1,12 +1,12 @@
 version: "Apple Swift version 2.1.1 (swiftlang-700.1.101.15 clang-700.1.81)"
 options: "11b4508951a5dab38498164df59b30a8"
-build_time: [511040237, 916121000]
+build_time: [511043352, 985965000]
 inputs:
-  "/Users/Ntokozo/Documents/Libraries/RWPickFlavor/RWPickFlavor/PickFlavorDataSource.swift": !dirty [497463517, 0]
-  "/Users/Ntokozo/Documents/Libraries/RWPickFlavor/RWPickFlavor/ScoopCell.swift": !private [481978117, 0]
-  "/Users/Ntokozo/Documents/Libraries/RWPickFlavor/RWPickFlavor/FlavorFactory.swift": !private [497376867, 0]
-  "/Users/Ntokozo/Documents/Libraries/RWPickFlavor/RWPickFlavor/RGBAColorFromString.swift": !dirty [497375579, 0]
-  "/Users/Ntokozo/Documents/Libraries/RWPickFlavor/RWPickFlavor/PickFlavorViewController.swift": !dirty [497469428, 0]
-  "/Users/Ntokozo/Documents/Libraries/RWPickFlavor/RWPickFlavor/Flavor.swift": !private [497375558, 0]
-  "/Users/Ntokozo/Documents/Libraries/RWPickFlavor/RWPickFlavor/IceCreamView.swift": !dirty [497377381, 0]
-  "/Users/Ntokozo/Documents/Libraries/RWPickFlavor/RWPickFlavor/ScoopView.swift": !private [497377381, 0]
+  "/Users/Ntokozo/Documents/Libraries/RWPickFlavor/RWPickFlavor/ScoopCell.swift": [481978117, 0]
+  "/Users/Ntokozo/Documents/Libraries/RWPickFlavor/RWPickFlavor/IceCreamView.swift": [497377381, 0]
+  "/Users/Ntokozo/Documents/Libraries/RWPickFlavor/RWPickFlavor/ScoopView.swift": [497377381, 0]
+  "/Users/Ntokozo/Documents/Libraries/RWPickFlavor/RWPickFlavor/Flavor.swift": [497375558, 0]
+  "/Users/Ntokozo/Documents/Libraries/RWPickFlavor/RWPickFlavor/RGBAColorFromString.swift": [497375579, 0]
+  "/Users/Ntokozo/Documents/Libraries/RWPickFlavor/RWPickFlavor/PickFlavorViewController.swift": [511043248, 0]
+  "/Users/Ntokozo/Documents/Libraries/RWPickFlavor/RWPickFlavor/PickFlavorDataSource.swift": [497463517, 0]
+  "/Users/Ntokozo/Documents/Libraries/RWPickFlavor/RWPickFlavor/FlavorFactory.swift": [497376867, 0]

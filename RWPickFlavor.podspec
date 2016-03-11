@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
     s.summary = "RWPickFlavor lets a user select an ice cream flavor."
 
     # 2
-    s.version = "0.1.0"
+    s.version = "0.2.0"
 
     # 3
     s.license = { :type => "MIT", :file => "LICENSE" }
@@ -24,6 +24,7 @@ Pod::Spec.new do |s|
     # 7
     s.framework = "UIKit"
     s.dependency 'Alamofire', '~> 2.0'
+    s.dependency 'BetterBaseClasses', '~> 1.0'
     s.dependency 'MBProgressHUD', '~> 0.9.0'
 
     # 8

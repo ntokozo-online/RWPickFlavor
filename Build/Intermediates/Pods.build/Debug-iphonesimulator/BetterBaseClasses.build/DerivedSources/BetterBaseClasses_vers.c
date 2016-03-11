@@ -1,0 +1,1 @@
+ const unsigned char BetterBaseClassesVersionString[] __attribute__ ((used)) = "@(#)PROGRAM:BetterBaseClasses  PROJECT:Pods-1" "\n"; const double BetterBaseClassesVersionNumber __attribute__ ((used)) = (double)1.;

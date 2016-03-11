@@ -1,10 +1,10 @@
 version: "Apple Swift version 2.1.1 (swiftlang-700.1.101.15 clang-700.1.81)"
 options: "4ff03c5737348a005a44b8b937b58e76"
-build_time: [511039702, 648186000]
+build_time: [511043203, 645368000]
 inputs:
   "/Users/Ntokozo/Documents/Libraries/RWPickFlavor/Pods/Alamofire/Source/Validation.swift": [511039632, 0]
-  "/Users/Ntokozo/Documents/Libraries/RWPickFlavor/Pods/Alamofire/Source/Error.swift": [511039632, 0]
   "/Users/Ntokozo/Documents/Libraries/RWPickFlavor/Pods/Alamofire/Source/Stream.swift": [511039632, 0]
+  "/Users/Ntokozo/Documents/Libraries/RWPickFlavor/Pods/Alamofire/Source/Error.swift": [511039632, 0]
   "/Users/Ntokozo/Documents/Libraries/RWPickFlavor/Pods/Alamofire/Source/Manager.swift": [511039632, 0]
   "/Users/Ntokozo/Documents/Libraries/RWPickFlavor/Pods/Alamofire/Source/Upload.swift": [511039632, 0]
   "/Users/Ntokozo/Documents/Libraries/RWPickFlavor/Pods/Alamofire/Source/MultipartFormData.swift": [511039632, 0]

@@ -6,28 +6,31 @@ provides-nominal:
 provides-member:
 - ["C12RWPickFlavor24PickFlavorViewController", ""]
 provides-dynamic-lookup:
-- "viewDidLoad"
-- "iceCreamView"
-- "label"
 - "contentView"
+- "label"
 - "collectionView"
 - "collectionView"
+- "iceCreamView"
+- "viewDidLoad"
 depends-top-level:
+- !private "String"
+- !private "MBProgressHUD"
+- "FlavorFactory"
+- "UILabel"
+- !private "Void"
+- "PickFlavorViewController"
+- !private "StringLiteralType"
+- "NSIndexPath"
+- "PickFlavorDataSource"
+- "UIView"
+- "UICollectionView"
+- !private "print"
+- "IceCreamView"
+- "Flavor"
+- !private "BooleanLiteralType"
+- "BaseViewController"
 - !private "Alamofire"
 - "UICollectionViewDelegate"
-- "FlavorFactory"
-- "PickFlavorDataSource"
-- "UILabel"
-- "Flavor"
-- "IceCreamView"
-- "UIViewController"
-- !private "Void"
-- "UIView"
-- !private "StringLiteralType"
-- "UICollectionView"
-- "PickFlavorViewController"
-- "NSIndexPath"
-- !private "MBProgressHUD"
 depends-member:
 - !private ["PSs9AnyObject", "Alamofire"]
 - ["PSs9AnyObject", "FlavorFactory"]
@@ -37,13 +40,19 @@ depends-member:
 - !private ["PSs9AnyObject", "dataSource"]
 - ["PSs9AnyObject", "flavorFactory"]
 - ["PSs9AnyObject", "flavors"]
+- !private ["PSs9AnyObject", "flavorsFromDictionaryArray"]
+- !private ["PSs9AnyObject", "hideAllHUDsForView"]
 - ["PSs9AnyObject", "hideLoadingHUD"]
 - ["PSs9AnyObject", "iceCreamView"]
 - ["PSs9AnyObject", "indexPathForPreferredFocusedViewInCollectionView"]
 - ["PSs9AnyObject", "init"]
 - ["PSs9AnyObject", "label"]
+- !private ["PSs9AnyObject", "labelText"]
 - ["PSs9AnyObject", "loadFlavors"]
 - ["PSs9AnyObject", "pickFlavorDataSource"]
+- !private ["PSs9AnyObject", "print"]
+- !private ["PSs9AnyObject", "reloadData"]
+- !private ["PSs9AnyObject", "responsePropertyList"]
 - !private ["PSs9AnyObject", "row"]
 - ["PSs9AnyObject", "scrollViewDidEndDecelerating"]
 - ["PSs9AnyObject", "scrollViewDidEndDragging"]
@@ -58,6 +67,7 @@ depends-member:
 - ["PSs9AnyObject", "scrollViewWillBeginZooming"]
 - ["PSs9AnyObject", "scrollViewWillEndDragging"]
 - ["PSs9AnyObject", "selectFirstFlavor"]
+- !private ["PSs9AnyObject", "showHUDAddedTo"]
 - ["PSs9AnyObject", "showLoadingHUD"]
 - !private ["PSs9AnyObject", "text"]
 - ["PSs9AnyObject", "updateWithFlavor"]
@@ -79,6 +89,48 @@ depends-member:
 - !private ["PSs23ArrayLiteralConvertible", "subscript"]
 - !private ["VSs10ArraySlice", "Generator"]
 - !private ["VSs10ArraySlice", "Index"]
+- !private ["CSo18BaseViewController", "Alamofire"]
+- ["CSo18BaseViewController", "Flavor"]
+- ["CSo18BaseViewController", "FlavorFactory"]
+- ["CSo18BaseViewController", "IceCreamView"]
+- !private ["CSo18BaseViewController", "MBProgressHUD"]
+- ["CSo18BaseViewController", "NSIndexPath"]
+- ["CSo18BaseViewController", "PickFlavorDataSource"]
+- !private ["CSo18BaseViewController", "String"]
+- ["CSo18BaseViewController", "UICollectionView"]
+- ["CSo18BaseViewController", "UILabel"]
+- ["CSo18BaseViewController", "UIView"]
+- !private ["CSo18BaseViewController", "Void"]
+- ["CSo18BaseViewController", "collectionView"]
+- ["CSo18BaseViewController", "contentView"]
+- ["CSo18BaseViewController", "flavorFactory"]
+- ["CSo18BaseViewController", "flavors"]
+- ["CSo18BaseViewController", "hideLoadingHUD"]
+- ["CSo18BaseViewController", "iceCreamView"]
+- ["CSo18BaseViewController", "indexPathForPreferredFocusedViewInCollectionView"]
+- ["CSo18BaseViewController", "init"]
+- ["CSo18BaseViewController", "label"]
+- ["CSo18BaseViewController", "loadFlavors"]
+- ["CSo18BaseViewController", "pickFlavorDataSource"]
+- !private ["CSo18BaseViewController", "print"]
+- ["CSo18BaseViewController", "scrollViewDidEndDecelerating"]
+- ["CSo18BaseViewController", "scrollViewDidEndDragging"]
+- ["CSo18BaseViewController", "scrollViewDidEndScrollingAnimation"]
+- ["CSo18BaseViewController", "scrollViewDidEndZooming"]
+- ["CSo18BaseViewController", "scrollViewDidScroll"]
+- ["CSo18BaseViewController", "scrollViewDidScrollToTop"]
+- ["CSo18BaseViewController", "scrollViewDidZoom"]
+- ["CSo18BaseViewController", "scrollViewShouldScrollToTop"]
+- ["CSo18BaseViewController", "scrollViewWillBeginDecelerating"]
+- ["CSo18BaseViewController", "scrollViewWillBeginDragging"]
+- ["CSo18BaseViewController", "scrollViewWillBeginZooming"]
+- ["CSo18BaseViewController", "scrollViewWillEndDragging"]
+- ["CSo18BaseViewController", "selectFirstFlavor"]
+- ["CSo18BaseViewController", "showLoadingHUD"]
+- ["CSo18BaseViewController", "updateWithFlavor"]
+- ["CSo18BaseViewController", "viewDidLoad"]
+- ["CSo18BaseViewController", "viewForZoomingInScrollView"]
+- ["CSo18BaseViewController", ""]
 - !private ["PSs22BidirectionalIndexType", "Distance"]
 - !private ["PSs22BidirectionalIndexType", "IntegerLiteralType"]
 - !private ["PSs21BitwiseOperationsType", "Distance"]
@@ -93,13 +145,17 @@ depends-member:
 - !private ["PSs11CVarArgType", "dataSource"]
 - ["PSs11CVarArgType", "flavorFactory"]
 - ["PSs11CVarArgType", "flavors"]
+- !private ["PSs11CVarArgType", "hideAllHUDsForView"]
 - ["PSs11CVarArgType", "hideLoadingHUD"]
 - ["PSs11CVarArgType", "iceCreamView"]
 - ["PSs11CVarArgType", "indexPathForPreferredFocusedViewInCollectionView"]
 - ["PSs11CVarArgType", "init"]
 - ["PSs11CVarArgType", "label"]
+- !private ["PSs11CVarArgType", "labelText"]
 - ["PSs11CVarArgType", "loadFlavors"]
 - ["PSs11CVarArgType", "pickFlavorDataSource"]
+- !private ["PSs11CVarArgType", "print"]
+- !private ["PSs11CVarArgType", "reloadData"]
 - !private ["PSs11CVarArgType", "row"]
 - ["PSs11CVarArgType", "scrollViewDidEndDecelerating"]
 - ["PSs11CVarArgType", "scrollViewDidEndDragging"]
@@ -114,6 +170,7 @@ depends-member:
 - ["PSs11CVarArgType", "scrollViewWillBeginZooming"]
 - ["PSs11CVarArgType", "scrollViewWillEndDragging"]
 - ["PSs11CVarArgType", "selectFirstFlavor"]
+- !private ["PSs11CVarArgType", "showHUDAddedTo"]
 - ["PSs11CVarArgType", "showLoadingHUD"]
 - !private ["PSs11CVarArgType", "text"]
 - ["PSs11CVarArgType", "updateWithFlavor"]
@@ -128,21 +185,26 @@ depends-member:
 - !private ["PSs14CollectionType", "subscript"]
 - !private ["PSs10Comparable", "Distance"]
 - !private ["PSs10Comparable", "IntegerLiteralType"]
+- !private ["PSs28CustomDebugStringConvertible", "Failure"]
 - !private ["PSs28CustomDebugStringConvertible", "Generator"]
 - !private ["PSs28CustomDebugStringConvertible", "Index"]
 - !private ["PSs28CustomDebugStringConvertible", "Some"]
 - !private ["PSs28CustomDebugStringConvertible", "SubSequence"]
+- !private ["PSs28CustomDebugStringConvertible", "Success"]
 - !private ["PSs28CustomDebugStringConvertible", "_Element"]
 - !private ["PSs28CustomDebugStringConvertible", "first"]
+- !private ["PSs28CustomDebugStringConvertible", "responsePropertyList"]
 - !private ["PSs28CustomDebugStringConvertible", "subscript"]
 - !private ["PSs23CustomStringConvertible", "Alamofire"]
 - !private ["PSs23CustomStringConvertible", "Distance"]
+- !private ["PSs23CustomStringConvertible", "Failure"]
 - ["PSs23CustomStringConvertible", "FlavorFactory"]
 - !private ["PSs23CustomStringConvertible", "Generator"]
 - !private ["PSs23CustomStringConvertible", "Index"]
 - !private ["PSs23CustomStringConvertible", "IntegerLiteralType"]
 - !private ["PSs23CustomStringConvertible", "MBProgressHUD"]
 - !private ["PSs23CustomStringConvertible", "SubSequence"]
+- !private ["PSs23CustomStringConvertible", "Success"]
 - !private ["PSs23CustomStringConvertible", "_Element"]
 - ["PSs23CustomStringConvertible", "collectionView"]
 - ["PSs23CustomStringConvertible", "contentView"]
@@ -150,13 +212,18 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "first"]
 - ["PSs23CustomStringConvertible", "flavorFactory"]
 - ["PSs23CustomStringConvertible", "flavors"]
+- !private ["PSs23CustomStringConvertible", "hideAllHUDsForView"]
 - ["PSs23CustomStringConvertible", "hideLoadingHUD"]
 - ["PSs23CustomStringConvertible", "iceCreamView"]
 - ["PSs23CustomStringConvertible", "indexPathForPreferredFocusedViewInCollectionView"]
 - ["PSs23CustomStringConvertible", "init"]
 - ["PSs23CustomStringConvertible", "label"]
+- !private ["PSs23CustomStringConvertible", "labelText"]
 - ["PSs23CustomStringConvertible", "loadFlavors"]
 - ["PSs23CustomStringConvertible", "pickFlavorDataSource"]
+- !private ["PSs23CustomStringConvertible", "print"]
+- !private ["PSs23CustomStringConvertible", "reloadData"]
+- !private ["PSs23CustomStringConvertible", "responsePropertyList"]
 - !private ["PSs23CustomStringConvertible", "row"]
 - ["PSs23CustomStringConvertible", "scrollViewDidEndDecelerating"]
 - ["PSs23CustomStringConvertible", "scrollViewDidEndDragging"]
@@ -171,6 +238,7 @@ depends-member:
 - ["PSs23CustomStringConvertible", "scrollViewWillBeginZooming"]
 - ["PSs23CustomStringConvertible", "scrollViewWillEndDragging"]
 - ["PSs23CustomStringConvertible", "selectFirstFlavor"]
+- !private ["PSs23CustomStringConvertible", "showHUDAddedTo"]
 - ["PSs23CustomStringConvertible", "showLoadingHUD"]
 - !private ["PSs23CustomStringConvertible", "subscript"]
 - !private ["PSs23CustomStringConvertible", "text"]
@@ -181,20 +249,26 @@ depends-member:
 - !private ["PSs9Equatable", "Alamofire"]
 - !private ["PSs9Equatable", "Distance"]
 - ["PSs9Equatable", "FlavorFactory"]
+- !private ["PSs9Equatable", "GET"]
 - !private ["PSs9Equatable", "IntegerLiteralType"]
 - !private ["PSs9Equatable", "MBProgressHUD"]
+- !private ["PSs9Equatable", "XMLFormat_v1_0"]
 - ["PSs9Equatable", "collectionView"]
 - ["PSs9Equatable", "contentView"]
 - !private ["PSs9Equatable", "dataSource"]
 - ["PSs9Equatable", "flavorFactory"]
 - ["PSs9Equatable", "flavors"]
+- !private ["PSs9Equatable", "hideAllHUDsForView"]
 - ["PSs9Equatable", "hideLoadingHUD"]
 - ["PSs9Equatable", "iceCreamView"]
 - ["PSs9Equatable", "indexPathForPreferredFocusedViewInCollectionView"]
 - ["PSs9Equatable", "init"]
 - ["PSs9Equatable", "label"]
+- !private ["PSs9Equatable", "labelText"]
 - ["PSs9Equatable", "loadFlavors"]
 - ["PSs9Equatable", "pickFlavorDataSource"]
+- !private ["PSs9Equatable", "print"]
+- !private ["PSs9Equatable", "reloadData"]
 - !private ["PSs9Equatable", "row"]
 - ["PSs9Equatable", "scrollViewDidEndDecelerating"]
 - ["PSs9Equatable", "scrollViewDidEndDragging"]
@@ -209,6 +283,7 @@ depends-member:
 - ["PSs9Equatable", "scrollViewWillBeginZooming"]
 - ["PSs9Equatable", "scrollViewWillEndDragging"]
 - ["PSs9Equatable", "selectFirstFlavor"]
+- !private ["PSs9Equatable", "showHUDAddedTo"]
 - ["PSs9Equatable", "showLoadingHUD"]
 - !private ["PSs9Equatable", "text"]
 - ["PSs9Equatable", "updateWithFlavor"]
@@ -218,6 +293,7 @@ depends-member:
 - ["V12RWPickFlavor6Flavor", "deinit"]
 - !private ["V12RWPickFlavor6Flavor", "name"]
 - !private ["P12RWPickFlavor13FlavorAdapter", "updateWithFlavor"]
+- !private ["C12RWPickFlavor13FlavorFactory", "flavorsFromDictionaryArray"]
 - ["C12RWPickFlavor13FlavorFactory", "init"]
 - !private ["PSs16ForwardIndexType", "Distance"]
 - !private ["PSs16ForwardIndexType", "IntegerLiteralType"]
@@ -225,20 +301,26 @@ depends-member:
 - !private ["PSs8Hashable", "Alamofire"]
 - !private ["PSs8Hashable", "Distance"]
 - ["PSs8Hashable", "FlavorFactory"]
+- !private ["PSs8Hashable", "GET"]
 - !private ["PSs8Hashable", "IntegerLiteralType"]
 - !private ["PSs8Hashable", "MBProgressHUD"]
+- !private ["PSs8Hashable", "XMLFormat_v1_0"]
 - ["PSs8Hashable", "collectionView"]
 - ["PSs8Hashable", "contentView"]
 - !private ["PSs8Hashable", "dataSource"]
 - ["PSs8Hashable", "flavorFactory"]
 - ["PSs8Hashable", "flavors"]
+- !private ["PSs8Hashable", "hideAllHUDsForView"]
 - ["PSs8Hashable", "hideLoadingHUD"]
 - ["PSs8Hashable", "iceCreamView"]
 - ["PSs8Hashable", "indexPathForPreferredFocusedViewInCollectionView"]
 - ["PSs8Hashable", "init"]
 - ["PSs8Hashable", "label"]
+- !private ["PSs8Hashable", "labelText"]
 - ["PSs8Hashable", "loadFlavors"]
 - ["PSs8Hashable", "pickFlavorDataSource"]
+- !private ["PSs8Hashable", "print"]
+- !private ["PSs8Hashable", "reloadData"]
 - !private ["PSs8Hashable", "row"]
 - ["PSs8Hashable", "scrollViewDidEndDecelerating"]
 - ["PSs8Hashable", "scrollViewDidEndDragging"]
@@ -253,6 +335,7 @@ depends-member:
 - ["PSs8Hashable", "scrollViewWillBeginZooming"]
 - ["PSs8Hashable", "scrollViewWillEndDragging"]
 - ["PSs8Hashable", "selectFirstFlavor"]
+- !private ["PSs8Hashable", "showHUDAddedTo"]
 - ["PSs8Hashable", "showLoadingHUD"]
 - !private ["PSs8Hashable", "text"]
 - ["PSs8Hashable", "updateWithFlavor"]
@@ -261,6 +344,7 @@ depends-member:
 - ["PSs8Hashable", ""]
 - !private ["C12RWPickFlavor12IceCreamView", "deinit"]
 - !private ["C12RWPickFlavor12IceCreamView", "updateWithFlavor"]
+- !private ["SQ", "deinit"]
 - !private ["PSs9Indexable", "Generator"]
 - !private ["PSs9Indexable", "Index"]
 - !private ["PSs9Indexable", "SubSequence"]
@@ -276,6 +360,10 @@ depends-member:
 - !private ["PSs25IntegerLiteralConvertible", "IntegerLiteralType"]
 - !private ["PSs11IntegerType", "Distance"]
 - !private ["PSs11IntegerType", "IntegerLiteralType"]
+- !private ["CSo13MBProgressHUD", "hideAllHUDsForView"]
+- !private ["CSo13MBProgressHUD", "labelText"]
+- !private ["CSo13MBProgressHUD", "showHUDAddedTo"]
+- !private ["O9Alamofire6Method", "GET"]
 - !private ["PSs14MirrorPathType", "Distance"]
 - !private ["PSs14MirrorPathType", "IntegerLiteralType"]
 - !private ["PSs21MutableCollectionType", "Generator"]
@@ -304,13 +392,17 @@ depends-member:
 - !private ["PSo8NSCoding", "dataSource"]
 - ["PSo8NSCoding", "flavorFactory"]
 - ["PSo8NSCoding", "flavors"]
+- !private ["PSo8NSCoding", "hideAllHUDsForView"]
 - ["PSo8NSCoding", "hideLoadingHUD"]
 - ["PSo8NSCoding", "iceCreamView"]
 - ["PSo8NSCoding", "indexPathForPreferredFocusedViewInCollectionView"]
 - ["PSo8NSCoding", "init"]
 - ["PSo8NSCoding", "label"]
+- !private ["PSo8NSCoding", "labelText"]
 - ["PSo8NSCoding", "loadFlavors"]
 - ["PSo8NSCoding", "pickFlavorDataSource"]
+- !private ["PSo8NSCoding", "print"]
+- !private ["PSo8NSCoding", "reloadData"]
 - !private ["PSo8NSCoding", "row"]
 - ["PSo8NSCoding", "scrollViewDidEndDecelerating"]
 - ["PSo8NSCoding", "scrollViewDidEndDragging"]
@@ -325,6 +417,7 @@ depends-member:
 - ["PSo8NSCoding", "scrollViewWillBeginZooming"]
 - ["PSo8NSCoding", "scrollViewWillEndDragging"]
 - ["PSo8NSCoding", "selectFirstFlavor"]
+- !private ["PSo8NSCoding", "showHUDAddedTo"]
 - ["PSo8NSCoding", "showLoadingHUD"]
 - !private ["PSo8NSCoding", "text"]
 - ["PSo8NSCoding", "updateWithFlavor"]
@@ -346,6 +439,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "label"]
 - ["PSo26NSExtensionRequestHandling", "loadFlavors"]
 - ["PSo26NSExtensionRequestHandling", "pickFlavorDataSource"]
+- !private ["PSo26NSExtensionRequestHandling", "print"]
 - ["PSo26NSExtensionRequestHandling", "scrollViewDidEndDecelerating"]
 - ["PSo26NSExtensionRequestHandling", "scrollViewDidEndDragging"]
 - ["PSo26NSExtensionRequestHandling", "scrollViewDidEndScrollingAnimation"]
@@ -372,6 +466,7 @@ depends-member:
 - !private ["CSo8NSObject", "MBProgressHUD"]
 - ["CSo8NSObject", "NSIndexPath"]
 - ["CSo8NSObject", "PickFlavorDataSource"]
+- !private ["CSo8NSObject", "String"]
 - ["CSo8NSObject", "UICollectionView"]
 - ["CSo8NSObject", "UILabel"]
 - ["CSo8NSObject", "UIView"]
@@ -381,13 +476,17 @@ depends-member:
 - !private ["CSo8NSObject", "dataSource"]
 - ["CSo8NSObject", "flavorFactory"]
 - ["CSo8NSObject", "flavors"]
+- !private ["CSo8NSObject", "hideAllHUDsForView"]
 - ["CSo8NSObject", "hideLoadingHUD"]
 - ["CSo8NSObject", "iceCreamView"]
 - ["CSo8NSObject", "indexPathForPreferredFocusedViewInCollectionView"]
 - ["CSo8NSObject", "init"]
 - ["CSo8NSObject", "label"]
+- !private ["CSo8NSObject", "labelText"]
 - ["CSo8NSObject", "loadFlavors"]
 - ["CSo8NSObject", "pickFlavorDataSource"]
+- !private ["CSo8NSObject", "print"]
+- !private ["CSo8NSObject", "reloadData"]
 - !private ["CSo8NSObject", "row"]
 - ["CSo8NSObject", "scrollViewDidEndDecelerating"]
 - ["CSo8NSObject", "scrollViewDidEndDragging"]
@@ -402,6 +501,7 @@ depends-member:
 - ["CSo8NSObject", "scrollViewWillBeginZooming"]
 - ["CSo8NSObject", "scrollViewWillEndDragging"]
 - ["CSo8NSObject", "selectFirstFlavor"]
+- !private ["CSo8NSObject", "showHUDAddedTo"]
 - ["CSo8NSObject", "showLoadingHUD"]
 - !private ["CSo8NSObject", "text"]
 - ["CSo8NSObject", "updateWithFlavor"]
@@ -415,13 +515,17 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "dataSource"]
 - ["PSo16NSObjectProtocol", "flavorFactory"]
 - ["PSo16NSObjectProtocol", "flavors"]
+- !private ["PSo16NSObjectProtocol", "hideAllHUDsForView"]
 - ["PSo16NSObjectProtocol", "hideLoadingHUD"]
 - ["PSo16NSObjectProtocol", "iceCreamView"]
 - ["PSo16NSObjectProtocol", "indexPathForPreferredFocusedViewInCollectionView"]
 - ["PSo16NSObjectProtocol", "init"]
 - ["PSo16NSObjectProtocol", "label"]
+- !private ["PSo16NSObjectProtocol", "labelText"]
 - ["PSo16NSObjectProtocol", "loadFlavors"]
 - ["PSo16NSObjectProtocol", "pickFlavorDataSource"]
+- !private ["PSo16NSObjectProtocol", "print"]
+- !private ["PSo16NSObjectProtocol", "reloadData"]
 - !private ["PSo16NSObjectProtocol", "row"]
 - ["PSo16NSObjectProtocol", "scrollViewDidEndDecelerating"]
 - ["PSo16NSObjectProtocol", "scrollViewDidEndDragging"]
@@ -436,16 +540,19 @@ depends-member:
 - ["PSo16NSObjectProtocol", "scrollViewWillBeginZooming"]
 - ["PSo16NSObjectProtocol", "scrollViewWillEndDragging"]
 - ["PSo16NSObjectProtocol", "selectFirstFlavor"]
+- !private ["PSo16NSObjectProtocol", "showHUDAddedTo"]
 - ["PSo16NSObjectProtocol", "showLoadingHUD"]
 - !private ["PSo16NSObjectProtocol", "text"]
 - ["PSo16NSObjectProtocol", "updateWithFlavor"]
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", "viewForZoomingInScrollView"]
 - ["PSo16NSObjectProtocol", ""]
+- !private ["OSC20NSPropertyListFormat", "XMLFormat_v1_0"]
 - !private ["PSo14NSSecureCoding", "row"]
 - !private ["PSs21NilLiteralConvertible", "Some"]
 - !private ["Sq", "Some"]
 - !private ["Sq", "deinit"]
+- !private ["O9Alamofire17ParameterEncoding", "PropertyList"]
 - !private ["C12RWPickFlavor20PickFlavorDataSource", "flavors"]
 - !private ["C12RWPickFlavor24PickFlavorViewController", "Alamofire"]
 - ["C12RWPickFlavor24PickFlavorViewController", "Flavor"]
@@ -454,6 +561,7 @@ depends-member:
 - !private ["C12RWPickFlavor24PickFlavorViewController", "MBProgressHUD"]
 - ["C12RWPickFlavor24PickFlavorViewController", "NSIndexPath"]
 - ["C12RWPickFlavor24PickFlavorViewController", "PickFlavorDataSource"]
+- !private ["C12RWPickFlavor24PickFlavorViewController", "String"]
 - ["C12RWPickFlavor24PickFlavorViewController", "UICollectionView"]
 - ["C12RWPickFlavor24PickFlavorViewController", "UILabel"]
 - ["C12RWPickFlavor24PickFlavorViewController", "UIView"]
@@ -470,6 +578,7 @@ depends-member:
 - ["C12RWPickFlavor24PickFlavorViewController", "label"]
 - !private ["C12RWPickFlavor24PickFlavorViewController", "loadFlavors"]
 - !private ["C12RWPickFlavor24PickFlavorViewController", "pickFlavorDataSource"]
+- !private ["C12RWPickFlavor24PickFlavorViewController", "print"]
 - ["C12RWPickFlavor24PickFlavorViewController", "scrollViewDidEndDecelerating"]
 - ["C12RWPickFlavor24PickFlavorViewController", "scrollViewDidEndDragging"]
 - ["C12RWPickFlavor24PickFlavorViewController", "scrollViewDidEndScrollingAnimation"]
@@ -495,6 +604,11 @@ depends-member:
 - !private ["PSs30RangeReplaceableCollectionType", "_Element"]
 - !private ["PSs30RangeReplaceableCollectionType", "first"]
 - !private ["PSs30RangeReplaceableCollectionType", "subscript"]
+- !private ["PSs16RawRepresentable", "GET"]
+- !private ["PSs16RawRepresentable", "XMLFormat_v1_0"]
+- !private ["C9Alamofire7Request", "responsePropertyList"]
+- !private ["O9Alamofire6Result", "Failure"]
+- !private ["O9Alamofire6Result", "Success"]
 - !private ["PSs12SequenceType", "Element"]
 - !private ["PSs12SequenceType", "Generator"]
 - !private ["PSs12SequenceType", "Index"]
@@ -513,9 +627,17 @@ depends-member:
 - !private ["PSs10Strideable", "Distance"]
 - !private ["PSs10Strideable", "IntegerLiteralType"]
 - !private ["PSo29UIAccessibilityIdentification", "dataSource"]
+- !private ["PSo29UIAccessibilityIdentification", "hideAllHUDsForView"]
+- !private ["PSo29UIAccessibilityIdentification", "labelText"]
+- !private ["PSo29UIAccessibilityIdentification", "reloadData"]
+- !private ["PSo29UIAccessibilityIdentification", "showHUDAddedTo"]
 - !private ["PSo29UIAccessibilityIdentification", "text"]
 - !private ["PSo29UIAccessibilityIdentification", "updateWithFlavor"]
 - !private ["PSo12UIAppearance", "dataSource"]
+- !private ["PSo12UIAppearance", "hideAllHUDsForView"]
+- !private ["PSo12UIAppearance", "labelText"]
+- !private ["PSo12UIAppearance", "reloadData"]
+- !private ["PSo12UIAppearance", "showHUDAddedTo"]
 - !private ["PSo12UIAppearance", "text"]
 - !private ["PSo12UIAppearance", "updateWithFlavor"]
 - !private ["PSo21UIAppearanceContainer", "Alamofire"]
@@ -526,13 +648,17 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "dataSource"]
 - ["PSo21UIAppearanceContainer", "flavorFactory"]
 - ["PSo21UIAppearanceContainer", "flavors"]
+- !private ["PSo21UIAppearanceContainer", "hideAllHUDsForView"]
 - ["PSo21UIAppearanceContainer", "hideLoadingHUD"]
 - ["PSo21UIAppearanceContainer", "iceCreamView"]
 - ["PSo21UIAppearanceContainer", "indexPathForPreferredFocusedViewInCollectionView"]
 - ["PSo21UIAppearanceContainer", "init"]
 - ["PSo21UIAppearanceContainer", "label"]
+- !private ["PSo21UIAppearanceContainer", "labelText"]
 - ["PSo21UIAppearanceContainer", "loadFlavors"]
 - ["PSo21UIAppearanceContainer", "pickFlavorDataSource"]
+- !private ["PSo21UIAppearanceContainer", "print"]
+- !private ["PSo21UIAppearanceContainer", "reloadData"]
 - ["PSo21UIAppearanceContainer", "scrollViewDidEndDecelerating"]
 - ["PSo21UIAppearanceContainer", "scrollViewDidEndDragging"]
 - ["PSo21UIAppearanceContainer", "scrollViewDidEndScrollingAnimation"]
@@ -546,6 +672,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "scrollViewWillBeginZooming"]
 - ["PSo21UIAppearanceContainer", "scrollViewWillEndDragging"]
 - ["PSo21UIAppearanceContainer", "selectFirstFlavor"]
+- !private ["PSo21UIAppearanceContainer", "showHUDAddedTo"]
 - ["PSo21UIAppearanceContainer", "showLoadingHUD"]
 - !private ["PSo21UIAppearanceContainer", "text"]
 - ["PSo21UIAppearanceContainer", "updateWithFlavor"]
@@ -553,18 +680,22 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "viewForZoomingInScrollView"]
 - ["PSo21UIAppearanceContainer", ""]
 - !private ["CSo16UICollectionView", "dataSource"]
+- !private ["CSo16UICollectionView", "reloadData"]
 - !private ["PSo26UICollectionViewDataSource", "flavors"]
 - !private ["PSo24UICollectionViewDelegate", "Alamofire"]
 - ["PSo24UICollectionViewDelegate", "FlavorFactory"]
 - !private ["PSo24UICollectionViewDelegate", "MBProgressHUD"]
 - ["PSo24UICollectionViewDelegate", "collectionView"]
 - !private ["PSo24UICollectionViewDelegate", "contentView"]
+- !private ["PSo24UICollectionViewDelegate", "flavorFactory"]
 - !private ["PSo24UICollectionViewDelegate", "flavors"]
+- !private ["PSo24UICollectionViewDelegate", "hideLoadingHUD"]
 - !private ["PSo24UICollectionViewDelegate", "iceCreamView"]
 - ["PSo24UICollectionViewDelegate", "indexPathForPreferredFocusedViewInCollectionView"]
 - !private ["PSo24UICollectionViewDelegate", "label"]
 - !private ["PSo24UICollectionViewDelegate", "loadFlavors"]
 - !private ["PSo24UICollectionViewDelegate", "pickFlavorDataSource"]
+- !private ["PSo24UICollectionViewDelegate", "print"]
 - ["PSo24UICollectionViewDelegate", "scrollViewDidEndDecelerating"]
 - ["PSo24UICollectionViewDelegate", "scrollViewDidEndDragging"]
 - ["PSo24UICollectionViewDelegate", "scrollViewDidEndScrollingAnimation"]
@@ -577,6 +708,7 @@ depends-member:
 - ["PSo24UICollectionViewDelegate", "scrollViewWillBeginDragging"]
 - ["PSo24UICollectionViewDelegate", "scrollViewWillBeginZooming"]
 - ["PSo24UICollectionViewDelegate", "scrollViewWillEndDragging"]
+- !private ["PSo24UICollectionViewDelegate", "selectFirstFlavor"]
 - !private ["PSo24UICollectionViewDelegate", "showLoadingHUD"]
 - !private ["PSo24UICollectionViewDelegate", "updateWithFlavor"]
 - ["PSo24UICollectionViewDelegate", "viewForZoomingInScrollView"]
@@ -595,6 +727,7 @@ depends-member:
 - ["PSo18UIContentContainer", "label"]
 - ["PSo18UIContentContainer", "loadFlavors"]
 - ["PSo18UIContentContainer", "pickFlavorDataSource"]
+- !private ["PSo18UIContentContainer", "print"]
 - ["PSo18UIContentContainer", "scrollViewDidEndDecelerating"]
 - ["PSo18UIContentContainer", "scrollViewDidEndDragging"]
 - ["PSo18UIContentContainer", "scrollViewDidEndScrollingAnimation"]
@@ -614,9 +747,17 @@ depends-member:
 - ["PSo18UIContentContainer", "viewForZoomingInScrollView"]
 - ["PSo18UIContentContainer", ""]
 - !private ["PSo17UICoordinateSpace", "dataSource"]
+- !private ["PSo17UICoordinateSpace", "hideAllHUDsForView"]
+- !private ["PSo17UICoordinateSpace", "labelText"]
+- !private ["PSo17UICoordinateSpace", "reloadData"]
+- !private ["PSo17UICoordinateSpace", "showHUDAddedTo"]
 - !private ["PSo17UICoordinateSpace", "text"]
 - !private ["PSo17UICoordinateSpace", "updateWithFlavor"]
 - !private ["PSo13UIDynamicItem", "dataSource"]
+- !private ["PSo13UIDynamicItem", "hideAllHUDsForView"]
+- !private ["PSo13UIDynamicItem", "labelText"]
+- !private ["PSo13UIDynamicItem", "reloadData"]
+- !private ["PSo13UIDynamicItem", "showHUDAddedTo"]
 - !private ["PSo13UIDynamicItem", "text"]
 - !private ["PSo13UIDynamicItem", "updateWithFlavor"]
 - !private ["PSo18UIFocusEnvironment", "Alamofire"]
@@ -627,13 +768,17 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "dataSource"]
 - ["PSo18UIFocusEnvironment", "flavorFactory"]
 - ["PSo18UIFocusEnvironment", "flavors"]
+- !private ["PSo18UIFocusEnvironment", "hideAllHUDsForView"]
 - ["PSo18UIFocusEnvironment", "hideLoadingHUD"]
 - ["PSo18UIFocusEnvironment", "iceCreamView"]
 - ["PSo18UIFocusEnvironment", "indexPathForPreferredFocusedViewInCollectionView"]
 - ["PSo18UIFocusEnvironment", "init"]
 - ["PSo18UIFocusEnvironment", "label"]
+- !private ["PSo18UIFocusEnvironment", "labelText"]
 - ["PSo18UIFocusEnvironment", "loadFlavors"]
 - ["PSo18UIFocusEnvironment", "pickFlavorDataSource"]
+- !private ["PSo18UIFocusEnvironment", "print"]
+- !private ["PSo18UIFocusEnvironment", "reloadData"]
 - ["PSo18UIFocusEnvironment", "scrollViewDidEndDecelerating"]
 - ["PSo18UIFocusEnvironment", "scrollViewDidEndDragging"]
 - ["PSo18UIFocusEnvironment", "scrollViewDidEndScrollingAnimation"]
@@ -647,6 +792,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "scrollViewWillBeginZooming"]
 - ["PSo18UIFocusEnvironment", "scrollViewWillEndDragging"]
 - ["PSo18UIFocusEnvironment", "selectFirstFlavor"]
+- !private ["PSo18UIFocusEnvironment", "showHUDAddedTo"]
 - ["PSo18UIFocusEnvironment", "showLoadingHUD"]
 - !private ["PSo18UIFocusEnvironment", "text"]
 - ["PSo18UIFocusEnvironment", "updateWithFlavor"]
@@ -661,6 +807,7 @@ depends-member:
 - !private ["CSo11UIResponder", "MBProgressHUD"]
 - ["CSo11UIResponder", "NSIndexPath"]
 - ["CSo11UIResponder", "PickFlavorDataSource"]
+- !private ["CSo11UIResponder", "String"]
 - ["CSo11UIResponder", "UICollectionView"]
 - ["CSo11UIResponder", "UILabel"]
 - ["CSo11UIResponder", "UIView"]
@@ -670,13 +817,17 @@ depends-member:
 - !private ["CSo11UIResponder", "dataSource"]
 - ["CSo11UIResponder", "flavorFactory"]
 - ["CSo11UIResponder", "flavors"]
+- !private ["CSo11UIResponder", "hideAllHUDsForView"]
 - ["CSo11UIResponder", "hideLoadingHUD"]
 - ["CSo11UIResponder", "iceCreamView"]
 - ["CSo11UIResponder", "indexPathForPreferredFocusedViewInCollectionView"]
 - ["CSo11UIResponder", "init"]
 - ["CSo11UIResponder", "label"]
+- !private ["CSo11UIResponder", "labelText"]
 - ["CSo11UIResponder", "loadFlavors"]
 - ["CSo11UIResponder", "pickFlavorDataSource"]
+- !private ["CSo11UIResponder", "print"]
+- !private ["CSo11UIResponder", "reloadData"]
 - ["CSo11UIResponder", "scrollViewDidEndDecelerating"]
 - ["CSo11UIResponder", "scrollViewDidEndDragging"]
 - ["CSo11UIResponder", "scrollViewDidEndScrollingAnimation"]
@@ -690,23 +841,28 @@ depends-member:
 - ["CSo11UIResponder", "scrollViewWillBeginZooming"]
 - ["CSo11UIResponder", "scrollViewWillEndDragging"]
 - ["CSo11UIResponder", "selectFirstFlavor"]
+- !private ["CSo11UIResponder", "showHUDAddedTo"]
 - ["CSo11UIResponder", "showLoadingHUD"]
 - !private ["CSo11UIResponder", "text"]
 - ["CSo11UIResponder", "updateWithFlavor"]
 - ["CSo11UIResponder", "viewDidLoad"]
 - ["CSo11UIResponder", "viewForZoomingInScrollView"]
 - !private ["CSo12UIScrollView", "dataSource"]
+- !private ["CSo12UIScrollView", "reloadData"]
 - !private ["PSo20UIScrollViewDelegate", "Alamofire"]
 - ["PSo20UIScrollViewDelegate", "FlavorFactory"]
 - !private ["PSo20UIScrollViewDelegate", "MBProgressHUD"]
 - ["PSo20UIScrollViewDelegate", "collectionView"]
 - !private ["PSo20UIScrollViewDelegate", "contentView"]
+- !private ["PSo20UIScrollViewDelegate", "flavorFactory"]
 - !private ["PSo20UIScrollViewDelegate", "flavors"]
+- !private ["PSo20UIScrollViewDelegate", "hideLoadingHUD"]
 - !private ["PSo20UIScrollViewDelegate", "iceCreamView"]
 - ["PSo20UIScrollViewDelegate", "indexPathForPreferredFocusedViewInCollectionView"]
 - !private ["PSo20UIScrollViewDelegate", "label"]
 - !private ["PSo20UIScrollViewDelegate", "loadFlavors"]
 - !private ["PSo20UIScrollViewDelegate", "pickFlavorDataSource"]
+- !private ["PSo20UIScrollViewDelegate", "print"]
 - ["PSo20UIScrollViewDelegate", "scrollViewDidEndDecelerating"]
 - ["PSo20UIScrollViewDelegate", "scrollViewDidEndDragging"]
 - ["PSo20UIScrollViewDelegate", "scrollViewDidEndScrollingAnimation"]
@@ -719,6 +875,7 @@ depends-member:
 - ["PSo20UIScrollViewDelegate", "scrollViewWillBeginDragging"]
 - ["PSo20UIScrollViewDelegate", "scrollViewWillBeginZooming"]
 - ["PSo20UIScrollViewDelegate", "scrollViewWillEndDragging"]
+- !private ["PSo20UIScrollViewDelegate", "selectFirstFlavor"]
 - !private ["PSo20UIScrollViewDelegate", "showLoadingHUD"]
 - !private ["PSo20UIScrollViewDelegate", "updateWithFlavor"]
 - ["PSo20UIScrollViewDelegate", "viewForZoomingInScrollView"]
@@ -737,6 +894,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "label"]
 - ["PSo16UIStateRestoring", "loadFlavors"]
 - ["PSo16UIStateRestoring", "pickFlavorDataSource"]
+- !private ["PSo16UIStateRestoring", "print"]
 - ["PSo16UIStateRestoring", "scrollViewDidEndDecelerating"]
 - ["PSo16UIStateRestoring", "scrollViewDidEndDragging"]
 - ["PSo16UIStateRestoring", "scrollViewDidEndScrollingAnimation"]
@@ -763,13 +921,17 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "dataSource"]
 - ["PSo18UITraitEnvironment", "flavorFactory"]
 - ["PSo18UITraitEnvironment", "flavors"]
+- !private ["PSo18UITraitEnvironment", "hideAllHUDsForView"]
 - ["PSo18UITraitEnvironment", "hideLoadingHUD"]
 - ["PSo18UITraitEnvironment", "iceCreamView"]
 - ["PSo18UITraitEnvironment", "indexPathForPreferredFocusedViewInCollectionView"]
 - ["PSo18UITraitEnvironment", "init"]
 - ["PSo18UITraitEnvironment", "label"]
+- !private ["PSo18UITraitEnvironment", "labelText"]
 - ["PSo18UITraitEnvironment", "loadFlavors"]
 - ["PSo18UITraitEnvironment", "pickFlavorDataSource"]
+- !private ["PSo18UITraitEnvironment", "print"]
+- !private ["PSo18UITraitEnvironment", "reloadData"]
 - ["PSo18UITraitEnvironment", "scrollViewDidEndDecelerating"]
 - ["PSo18UITraitEnvironment", "scrollViewDidEndDragging"]
 - ["PSo18UITraitEnvironment", "scrollViewDidEndScrollingAnimation"]
@@ -783,6 +945,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "scrollViewWillBeginZooming"]
 - ["PSo18UITraitEnvironment", "scrollViewWillEndDragging"]
 - ["PSo18UITraitEnvironment", "selectFirstFlavor"]
+- !private ["PSo18UITraitEnvironment", "showHUDAddedTo"]
 - ["PSo18UITraitEnvironment", "showLoadingHUD"]
 - !private ["PSo18UITraitEnvironment", "text"]
 - ["PSo18UITraitEnvironment", "updateWithFlavor"]
@@ -790,6 +953,10 @@ depends-member:
 - ["PSo18UITraitEnvironment", "viewForZoomingInScrollView"]
 - ["PSo18UITraitEnvironment", ""]
 - !private ["CSo6UIView", "dataSource"]
+- !private ["CSo6UIView", "hideAllHUDsForView"]
+- !private ["CSo6UIView", "labelText"]
+- !private ["CSo6UIView", "reloadData"]
+- !private ["CSo6UIView", "showHUDAddedTo"]
 - !private ["CSo6UIView", "text"]
 - !private ["CSo6UIView", "updateWithFlavor"]
 - !private ["CSo16UIViewController", "Alamofire"]
@@ -799,6 +966,7 @@ depends-member:
 - !private ["CSo16UIViewController", "MBProgressHUD"]
 - ["CSo16UIViewController", "NSIndexPath"]
 - ["CSo16UIViewController", "PickFlavorDataSource"]
+- !private ["CSo16UIViewController", "String"]
 - ["CSo16UIViewController", "UICollectionView"]
 - ["CSo16UIViewController", "UILabel"]
 - ["CSo16UIViewController", "UIView"]
@@ -814,6 +982,7 @@ depends-member:
 - ["CSo16UIViewController", "label"]
 - ["CSo16UIViewController", "loadFlavors"]
 - ["CSo16UIViewController", "pickFlavorDataSource"]
+- !private ["CSo16UIViewController", "print"]
 - ["CSo16UIViewController", "scrollViewDidEndDecelerating"]
 - ["CSo16UIViewController", "scrollViewDidEndDragging"]
 - ["CSo16UIViewController", "scrollViewDidEndScrollingAnimation"]
@@ -831,7 +1000,7 @@ depends-member:
 - ["CSo16UIViewController", "updateWithFlavor"]
 - ["CSo16UIViewController", "viewDidLoad"]
 - ["CSo16UIViewController", "viewForZoomingInScrollView"]
-- ["CSo16UIViewController", ""]
+- !private ["P9Alamofire20URLStringConvertible", "deinit"]
 - !private ["PSs10_ArrayType", "Generator"]
 - !private ["PSs10_ArrayType", "Index"]
 - !private ["PSs10_ArrayType", "SubSequence"]
@@ -871,6 +1040,10 @@ depends-member:
 - !private ["PSs12_Reflectable", "_Element"]
 - !private ["PSs12_Reflectable", "dataSource"]
 - !private ["PSs12_Reflectable", "first"]
+- !private ["PSs12_Reflectable", "hideAllHUDsForView"]
+- !private ["PSs12_Reflectable", "labelText"]
+- !private ["PSs12_Reflectable", "reloadData"]
+- !private ["PSs12_Reflectable", "showHUDAddedTo"]
 - !private ["PSs12_Reflectable", "subscript"]
 - !private ["PSs12_Reflectable", "text"]
 - !private ["PSs12_Reflectable", "updateWithFlavor"]
@@ -883,6 +1056,7 @@ depends-nominal:
 - !private "Sa"
 - !private "PSs23ArrayLiteralConvertible"
 - !private "VSs10ArraySlice"
+- "CSo18BaseViewController"
 - !private "PSs22BidirectionalIndexType"
 - !private "PSs21BitwiseOperationsType"
 - "PSs11CVarArgType"
@@ -898,12 +1072,15 @@ depends-nominal:
 - !private "PSs13GeneratorType"
 - "PSs8Hashable"
 - !private "C12RWPickFlavor12IceCreamView"
+- !private "SQ"
 - !private "PSs9Indexable"
 - !private "VSs17IndexingGenerator"
 - !private "Si"
 - !private "PSs21IntegerArithmeticType"
 - !private "PSs25IntegerLiteralConvertible"
 - !private "PSs11IntegerType"
+- !private "CSo13MBProgressHUD"
+- !private "O9Alamofire6Method"
 - !private "PSs14MirrorPathType"
 - !private "PSs21MutableCollectionType"
 - !private "PSs16MutableIndexable"
@@ -914,13 +1091,18 @@ depends-nominal:
 - !private "CSo11NSIndexPath"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
+- !private "OSC20NSPropertyListFormat"
 - !private "PSo14NSSecureCoding"
 - !private "PSs21NilLiteralConvertible"
 - !private "Sq"
+- !private "O9Alamofire17ParameterEncoding"
 - !private "C12RWPickFlavor20PickFlavorDataSource"
 - "C12RWPickFlavor24PickFlavorViewController"
 - !private "PSs21RandomAccessIndexType"
 - !private "PSs30RangeReplaceableCollectionType"
+- !private "PSs16RawRepresentable"
+- !private "C9Alamofire7Request"
+- !private "O9Alamofire6Result"
 - !private "PSs12SequenceType"
 - !private "PSs17SignedIntegerType"
 - !private "PSs16SignedNumberType"
@@ -944,6 +1126,7 @@ depends-nominal:
 - "PSo18UITraitEnvironment"
 - !private "CSo6UIView"
 - "CSo16UIViewController"
+- !private "P9Alamofire20URLStringConvertible"
 - !private "PSs10_ArrayType"
 - !private "PSs33_BuiltinIntegerLiteralConvertible"
 - !private "PSs24_DestructorSafeContainer"
@@ -968,4 +1151,29 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
 - "/Users/Ntokozo/Documents/Libraries/RWPickFlavor/Build/Products/Debug-iphonesimulator/Alamofire.framework/Modules/Alamofire.swiftmodule/x86_64.swiftmodule"
-interface-hash: "b99a36086cb1055ce420168c9a6ff387"
+- "/Users/Ntokozo/Documents/Libraries/RWPickFlavor/Build/Products/Debug-iphonesimulator/Alamofire.framework/Headers/Alamofire-Swift.h"
+- "/Users/Ntokozo/Documents/Libraries/RWPickFlavor/Build/Products/Debug-iphonesimulator/Alamofire.framework/Headers/Alamofire-umbrella.h"
+- "/Users/Ntokozo/Documents/Libraries/RWPickFlavor/Build/Products/Debug-iphonesimulator/Alamofire.framework/Modules/module.modulemap"
+- "/Users/Ntokozo/Documents/Libraries/RWPickFlavor/Build/Products/Debug-iphonesimulator/MBProgressHUD.framework/Headers/MBProgressHUD.h"
+- "/Users/Ntokozo/Documents/Libraries/RWPickFlavor/Build/Products/Debug-iphonesimulator/MBProgressHUD.framework/Headers/MBProgressHUD-umbrella.h"
+- "/Users/Ntokozo/Documents/Libraries/RWPickFlavor/Build/Products/Debug-iphonesimulator/MBProgressHUD.framework/Modules/module.modulemap"
+- "/Users/Ntokozo/Documents/Libraries/RWPickFlavor/Build/Products/Debug-iphonesimulator/BetterBaseClasses.framework/Headers/DynamicFontView.h"
+- "/Users/Ntokozo/Documents/Libraries/RWPickFlavor/Build/Products/Debug-iphonesimulator/BetterBaseClasses.framework/Headers/BaseView.h"
+- "/Users/Ntokozo/Documents/Libraries/RWPickFlavor/Build/Products/Debug-iphonesimulator/BetterBaseClasses.framework/Headers/DynamicFontTableViewCell.h"
+- "/Users/Ntokozo/Documents/Libraries/RWPickFlavor/Build/Products/Debug-iphonesimulator/BetterBaseClasses.framework/Headers/UIView+BetterBaseClasses.h"
+- "/Users/Ntokozo/Documents/Libraries/RWPickFlavor/Build/Products/Debug-iphonesimulator/BetterBaseClasses.framework/Headers/BaseTableViewCell.h"
+- "/Users/Ntokozo/Documents/Libraries/RWPickFlavor/Build/Products/Debug-iphonesimulator/BetterBaseClasses.framework/Headers/BetterBaseViews.h"
+- "/Users/Ntokozo/Documents/Libraries/RWPickFlavor/Build/Products/Debug-iphonesimulator/BetterBaseClasses.framework/Headers/DynamicFontViewController.h"
+- "/Users/Ntokozo/Documents/Libraries/RWPickFlavor/Build/Products/Debug-iphonesimulator/BetterBaseClasses.framework/Headers/DynamicFontTableContainerViewController.h"
+- "/Users/Ntokozo/Documents/Libraries/RWPickFlavor/Build/Products/Debug-iphonesimulator/BetterBaseClasses.framework/Headers/BaseViewController.h"
+- "/Users/Ntokozo/Documents/Libraries/RWPickFlavor/Build/Products/Debug-iphonesimulator/BetterBaseClasses.framework/Headers/DynamicFontTableViewController.h"
+- "/Users/Ntokozo/Documents/Libraries/RWPickFlavor/Build/Products/Debug-iphonesimulator/BetterBaseClasses.framework/Headers/UIViewController+BetterBaseClasses.h"
+- "/Users/Ntokozo/Documents/Libraries/RWPickFlavor/Build/Products/Debug-iphonesimulator/BetterBaseClasses.framework/Headers/BaseTableViewController.h"
+- "/Users/Ntokozo/Documents/Libraries/RWPickFlavor/Build/Products/Debug-iphonesimulator/BetterBaseClasses.framework/Headers/BaseAppDelegate.h"
+- "/Users/Ntokozo/Documents/Libraries/RWPickFlavor/Build/Products/Debug-iphonesimulator/BetterBaseClasses.framework/Headers/BetterBaseControllers.h"
+- "/Users/Ntokozo/Documents/Libraries/RWPickFlavor/Build/Products/Debug-iphonesimulator/BetterBaseClasses.framework/Headers/AppDelegateNotificationKeys.h"
+- "/Users/Ntokozo/Documents/Libraries/RWPickFlavor/Build/Products/Debug-iphonesimulator/BetterBaseClasses.framework/Headers/BetterBaseConstants.h"
+- "/Users/Ntokozo/Documents/Libraries/RWPickFlavor/Build/Products/Debug-iphonesimulator/BetterBaseClasses.framework/Headers/BetterBaseClasses.h"
+- "/Users/Ntokozo/Documents/Libraries/RWPickFlavor/Build/Products/Debug-iphonesimulator/BetterBaseClasses.framework/Headers/BetterBaseClasses-umbrella.h"
+- "/Users/Ntokozo/Documents/Libraries/RWPickFlavor/Build/Products/Debug-iphonesimulator/BetterBaseClasses.framework/Modules/module.modulemap"
+interface-hash: "03f65bb283cdd899602e9b7a5e61ce80"

@@ -86,11 +86,25 @@ typedef int swift_int2  __attribute__((__ext_vector_type__(2)));
 typedef int swift_int3  __attribute__((__ext_vector_type__(3)));
 typedef int swift_int4  __attribute__((__ext_vector_type__(4)));
 #if defined(__has_feature) && __has_feature(modules)
+@import BetterBaseClasses;
 @import UIKit;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
 #pragma clang diagnostic ignored "-Wduplicate-method-arg"
+@class UICollectionView;
+@class NSIndexPath;
+@class NSBundle;
+@class NSCoder;
+
+SWIFT_CLASS("_TtC12RWPickFlavor24PickFlavorViewController")
+@interface PickFlavorViewController : BaseViewController <UIScrollViewDelegate, UICollectionViewDelegate>
+- (void)viewDidLoad;
+- (void)collectionView:(UICollectionView * __nonnull)collectionView didSelectItemAtIndexPath:(NSIndexPath * __nonnull)indexPath;
+- (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 
 @interface UIColor (SWIFT_EXTENSION(RWPickFlavor))
 @end

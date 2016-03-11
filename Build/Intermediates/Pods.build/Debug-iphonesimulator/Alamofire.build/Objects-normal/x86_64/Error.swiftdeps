@@ -13,13 +13,13 @@ depends-top-level:
 - "=="
 - "IntegerLiteralType"
 - "StringLiteralType"
-- !private "Dictionary"
 - "String"
-- "NSError"
-- "Error"
-- "Int"
-- "FloatLiteralType"
 - !private "NSLocalizedFailureReasonErrorKey"
+- !private "Dictionary"
+- "Int"
+- "NSError"
+- "FloatLiteralType"
+- "Error"
 depends-member:
 - !private ["PSs9AnyObject", "init"]
 - !private ["PSs22BidirectionalIndexType", "Distance"]
