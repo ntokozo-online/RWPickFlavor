@@ -1,0 +1,12 @@
+version: "Apple Swift version 2.1.1 (swiftlang-700.1.101.15 clang-700.1.81)"
+options: "3da9692f725fc951ae18365d481c1652"
+build_time: [511040265, 676389000]
+inputs:
+  "/Users/Ntokozo/Documents/Libraries/RWPickFlavor/RWPickFlavor/RGBAColorFromString.swift": [497375579, 0]
+  "/Users/Ntokozo/Documents/Libraries/RWPickFlavor/RWPickFlavor/IceCreamView.swift": [497377381, 0]
+  "/Users/Ntokozo/Documents/Libraries/RWPickFlavor/RWPickFlavor/Flavor.swift": [497375558, 0]
+  "/Users/Ntokozo/Documents/Libraries/RWPickFlavor/RWPickFlavor/FlavorFactory.swift": [497376867, 0]
+  "/Users/Ntokozo/Documents/Libraries/RWPickFlavor/RWPickFlavor/PickFlavorViewController.swift": [497469428, 0]
+  "/Users/Ntokozo/Documents/Libraries/RWPickFlavor/RWPickFlavor/ScoopCell.swift": [481978117, 0]
+  "/Users/Ntokozo/Documents/Libraries/RWPickFlavor/RWPickFlavor/PickFlavorDataSource.swift": [497463517, 0]
+  "/Users/Ntokozo/Documents/Libraries/RWPickFlavor/RWPickFlavor/ScoopView.swift": [497377381, 0]

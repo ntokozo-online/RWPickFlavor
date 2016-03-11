@@ -1,0 +1,407 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "PickFlavorDataSource"
+provides-nominal:
+- "C12RWPickFlavor20PickFlavorDataSource"
+- "VC12RWPickFlavor20PickFlavorDataSourceP33_BFBCBA2CF85E2165DD279E9776BFBAF711Identifiers"
+provides-member:
+- ["C12RWPickFlavor20PickFlavorDataSource", ""]
+- ["VC12RWPickFlavor20PickFlavorDataSourceP33_BFBCBA2CF85E2165DD279E9776BFBAF711Identifiers", ""]
+provides-dynamic-lookup:
+- "collectionView"
+- "collectionView"
+- "collectionView"
+depends-top-level:
+- "PickFlavorDataSource"
+- "UICollectionViewCell"
+- "Int"
+- "UICollectionViewDataSource"
+- "StringLiteralType"
+- "NSObject"
+- "NSIndexPath"
+- !private "ScoopCell"
+- "UICollectionView"
+- "Flavor"
+depends-member:
+- ["PSs9AnyObject", "Flavor"]
+- !private ["PSs9AnyObject", "Identifiers"]
+- ["PSs9AnyObject", "collectionView"]
+- ["PSs9AnyObject", "configureScoopCell"]
+- !private ["PSs9AnyObject", "dequeueReusableCellWithReuseIdentifier"]
+- ["PSs9AnyObject", "flavors"]
+- ["PSs9AnyObject", "init"]
+- ["PSs9AnyObject", "numberOfSectionsInCollectionView"]
+- !private ["PSs9AnyObject", "row"]
+- ["PSs9AnyObject", "scoopCellAtIndexPath"]
+- !private ["PSs9AnyObject", "updateWithFlavor"]
+- ["PSs9AnyObject", ""]
+- !private ["Sa", "Generator"]
+- !private ["Sa", "Index"]
+- !private ["Sa", "SubSequence"]
+- !private ["Sa", "count"]
+- !private ["Sa", "deinit"]
+- ["Sa", "init"]
+- !private ["Sa", "subscript"]
+- !private ["PSs23ArrayLiteralConvertible", "Generator"]
+- !private ["PSs23ArrayLiteralConvertible", "Index"]
+- !private ["PSs23ArrayLiteralConvertible", "SubSequence"]
+- !private ["PSs23ArrayLiteralConvertible", "count"]
+- ["PSs23ArrayLiteralConvertible", "init"]
+- !private ["PSs23ArrayLiteralConvertible", "subscript"]
+- !private ["VSs10ArraySlice", "Generator"]
+- !private ["VSs10ArraySlice", "Index"]
+- !private ["PSs22BidirectionalIndexType", "Distance"]
+- !private ["PSs22BidirectionalIndexType", "IntegerLiteralType"]
+- !private ["PSs21BitwiseOperationsType", "Distance"]
+- !private ["PSs21BitwiseOperationsType", "IntegerLiteralType"]
+- !private ["PSs11CVarArgType", "Distance"]
+- ["PSs11CVarArgType", "Flavor"]
+- !private ["PSs11CVarArgType", "Identifiers"]
+- !private ["PSs11CVarArgType", "IntegerLiteralType"]
+- ["PSs11CVarArgType", "collectionView"]
+- ["PSs11CVarArgType", "configureScoopCell"]
+- !private ["PSs11CVarArgType", "dequeueReusableCellWithReuseIdentifier"]
+- ["PSs11CVarArgType", "flavors"]
+- ["PSs11CVarArgType", "init"]
+- ["PSs11CVarArgType", "numberOfSectionsInCollectionView"]
+- !private ["PSs11CVarArgType", "row"]
+- ["PSs11CVarArgType", "scoopCellAtIndexPath"]
+- !private ["PSs11CVarArgType", "updateWithFlavor"]
+- ["PSs11CVarArgType", ""]
+- !private ["PSs14CollectionType", "Generator"]
+- !private ["PSs14CollectionType", "Index"]
+- !private ["PSs14CollectionType", "SubSequence"]
+- !private ["PSs14CollectionType", "_Element"]
+- !private ["PSs14CollectionType", "count"]
+- ["PSs14CollectionType", "init"]
+- !private ["PSs14CollectionType", "subscript"]
+- !private ["PSs10Comparable", "Distance"]
+- !private ["PSs10Comparable", "IntegerLiteralType"]
+- !private ["PSs28CustomDebugStringConvertible", "Generator"]
+- !private ["PSs28CustomDebugStringConvertible", "Index"]
+- !private ["PSs28CustomDebugStringConvertible", "SubSequence"]
+- !private ["PSs28CustomDebugStringConvertible", "count"]
+- ["PSs28CustomDebugStringConvertible", "init"]
+- !private ["PSs28CustomDebugStringConvertible", "subscript"]
+- !private ["PSs23CustomStringConvertible", "Distance"]
+- ["PSs23CustomStringConvertible", "Flavor"]
+- !private ["PSs23CustomStringConvertible", "Generator"]
+- !private ["PSs23CustomStringConvertible", "Identifiers"]
+- !private ["PSs23CustomStringConvertible", "Index"]
+- !private ["PSs23CustomStringConvertible", "IntegerLiteralType"]
+- !private ["PSs23CustomStringConvertible", "SubSequence"]
+- ["PSs23CustomStringConvertible", "collectionView"]
+- ["PSs23CustomStringConvertible", "configureScoopCell"]
+- !private ["PSs23CustomStringConvertible", "count"]
+- !private ["PSs23CustomStringConvertible", "dequeueReusableCellWithReuseIdentifier"]
+- ["PSs23CustomStringConvertible", "flavors"]
+- ["PSs23CustomStringConvertible", "init"]
+- ["PSs23CustomStringConvertible", "numberOfSectionsInCollectionView"]
+- !private ["PSs23CustomStringConvertible", "row"]
+- ["PSs23CustomStringConvertible", "scoopCellAtIndexPath"]
+- !private ["PSs23CustomStringConvertible", "subscript"]
+- !private ["PSs23CustomStringConvertible", "updateWithFlavor"]
+- ["PSs23CustomStringConvertible", ""]
+- !private ["PSs9Equatable", "Distance"]
+- ["PSs9Equatable", "Flavor"]
+- !private ["PSs9Equatable", "Identifiers"]
+- !private ["PSs9Equatable", "IntegerLiteralType"]
+- ["PSs9Equatable", "collectionView"]
+- ["PSs9Equatable", "configureScoopCell"]
+- !private ["PSs9Equatable", "dequeueReusableCellWithReuseIdentifier"]
+- ["PSs9Equatable", "flavors"]
+- ["PSs9Equatable", "init"]
+- ["PSs9Equatable", "numberOfSectionsInCollectionView"]
+- !private ["PSs9Equatable", "row"]
+- ["PSs9Equatable", "scoopCellAtIndexPath"]
+- !private ["PSs9Equatable", "updateWithFlavor"]
+- ["PSs9Equatable", ""]
+- ["V12RWPickFlavor6Flavor", "deinit"]
+- !private ["P12RWPickFlavor13FlavorAdapter", "updateWithFlavor"]
+- !private ["PSs16ForwardIndexType", "Distance"]
+- !private ["PSs16ForwardIndexType", "IntegerLiteralType"]
+- !private ["PSs13GeneratorType", "Element"]
+- !private ["PSs8Hashable", "Distance"]
+- ["PSs8Hashable", "Flavor"]
+- !private ["PSs8Hashable", "Identifiers"]
+- !private ["PSs8Hashable", "IntegerLiteralType"]
+- ["PSs8Hashable", "collectionView"]
+- ["PSs8Hashable", "configureScoopCell"]
+- !private ["PSs8Hashable", "dequeueReusableCellWithReuseIdentifier"]
+- ["PSs8Hashable", "flavors"]
+- ["PSs8Hashable", "init"]
+- ["PSs8Hashable", "numberOfSectionsInCollectionView"]
+- !private ["PSs8Hashable", "row"]
+- ["PSs8Hashable", "scoopCellAtIndexPath"]
+- !private ["PSs8Hashable", "updateWithFlavor"]
+- ["PSs8Hashable", ""]
+- !private ["PSs9Indexable", "Generator"]
+- !private ["PSs9Indexable", "Index"]
+- !private ["PSs9Indexable", "SubSequence"]
+- !private ["PSs9Indexable", "_Element"]
+- !private ["PSs9Indexable", "count"]
+- ["PSs9Indexable", "init"]
+- !private ["PSs9Indexable", "subscript"]
+- !private ["VSs17IndexingGenerator", "Element"]
+- !private ["Si", "Distance"]
+- !private ["Si", "IntegerLiteralType"]
+- !private ["PSs21IntegerArithmeticType", "Distance"]
+- !private ["PSs21IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["PSs25IntegerLiteralConvertible", "Distance"]
+- !private ["PSs25IntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["PSs11IntegerType", "Distance"]
+- !private ["PSs11IntegerType", "IntegerLiteralType"]
+- !private ["PSs14MirrorPathType", "Distance"]
+- !private ["PSs14MirrorPathType", "IntegerLiteralType"]
+- !private ["PSs21MutableCollectionType", "Generator"]
+- !private ["PSs21MutableCollectionType", "Index"]
+- !private ["PSs21MutableCollectionType", "SubSequence"]
+- !private ["PSs21MutableCollectionType", "count"]
+- ["PSs21MutableCollectionType", "init"]
+- !private ["PSs21MutableCollectionType", "subscript"]
+- !private ["PSs16MutableIndexable", "Generator"]
+- !private ["PSs16MutableIndexable", "Index"]
+- !private ["PSs16MutableIndexable", "SubSequence"]
+- !private ["PSs16MutableIndexable", "count"]
+- ["PSs16MutableIndexable", "init"]
+- !private ["PSs16MutableIndexable", "subscript"]
+- !private ["PSs16MutableSliceable", "Generator"]
+- !private ["PSs16MutableSliceable", "Index"]
+- !private ["PSs16MutableSliceable", "SubSequence"]
+- !private ["PSs16MutableSliceable", "count"]
+- ["PSs16MutableSliceable", "init"]
+- !private ["PSs16MutableSliceable", "subscript"]
+- !private ["PSo8NSCoding", "dequeueReusableCellWithReuseIdentifier"]
+- !private ["PSo8NSCoding", "row"]
+- !private ["PSo8NSCoding", "updateWithFlavor"]
+- !private ["PSo9NSCopying", "row"]
+- !private ["CSo11NSIndexPath", "row"]
+- ["CSo8NSObject", "Flavor"]
+- !private ["CSo8NSObject", "Identifiers"]
+- ["CSo8NSObject", "Int"]
+- ["CSo8NSObject", "NSIndexPath"]
+- !private ["CSo8NSObject", "ScoopCell"]
+- ["CSo8NSObject", "UICollectionView"]
+- ["CSo8NSObject", "UICollectionViewCell"]
+- ["CSo8NSObject", "collectionView"]
+- ["CSo8NSObject", "configureScoopCell"]
+- !private ["CSo8NSObject", "dequeueReusableCellWithReuseIdentifier"]
+- ["CSo8NSObject", "flavors"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "numberOfSectionsInCollectionView"]
+- !private ["CSo8NSObject", "row"]
+- ["CSo8NSObject", "scoopCellAtIndexPath"]
+- !private ["CSo8NSObject", "updateWithFlavor"]
+- ["CSo8NSObject", ""]
+- ["PSo16NSObjectProtocol", "Flavor"]
+- !private ["PSo16NSObjectProtocol", "Identifiers"]
+- ["PSo16NSObjectProtocol", "collectionView"]
+- ["PSo16NSObjectProtocol", "configureScoopCell"]
+- !private ["PSo16NSObjectProtocol", "dequeueReusableCellWithReuseIdentifier"]
+- ["PSo16NSObjectProtocol", "flavors"]
+- ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "numberOfSectionsInCollectionView"]
+- !private ["PSo16NSObjectProtocol", "row"]
+- ["PSo16NSObjectProtocol", "scoopCellAtIndexPath"]
+- !private ["PSo16NSObjectProtocol", "updateWithFlavor"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "row"]
+- ["C12RWPickFlavor20PickFlavorDataSource", "Flavor"]
+- !private ["C12RWPickFlavor20PickFlavorDataSource", "Identifiers"]
+- ["C12RWPickFlavor20PickFlavorDataSource", "Int"]
+- ["C12RWPickFlavor20PickFlavorDataSource", "NSIndexPath"]
+- !private ["C12RWPickFlavor20PickFlavorDataSource", "ScoopCell"]
+- ["C12RWPickFlavor20PickFlavorDataSource", "UICollectionView"]
+- ["C12RWPickFlavor20PickFlavorDataSource", "UICollectionViewCell"]
+- ["C12RWPickFlavor20PickFlavorDataSource", "collectionView"]
+- !private ["C12RWPickFlavor20PickFlavorDataSource", "configureScoopCell"]
+- ["C12RWPickFlavor20PickFlavorDataSource", "deinit"]
+- ["C12RWPickFlavor20PickFlavorDataSource", "flavors"]
+- ["C12RWPickFlavor20PickFlavorDataSource", "init"]
+- ["C12RWPickFlavor20PickFlavorDataSource", "numberOfSectionsInCollectionView"]
+- !private ["C12RWPickFlavor20PickFlavorDataSource", "scoopCellAtIndexPath"]
+- !private ["PSs21RandomAccessIndexType", "Distance"]
+- !private ["PSs21RandomAccessIndexType", "IntegerLiteralType"]
+- !private ["PSs30RangeReplaceableCollectionType", "Generator"]
+- !private ["PSs30RangeReplaceableCollectionType", "Index"]
+- !private ["PSs30RangeReplaceableCollectionType", "SubSequence"]
+- !private ["PSs30RangeReplaceableCollectionType", "count"]
+- ["PSs30RangeReplaceableCollectionType", "init"]
+- !private ["PSs30RangeReplaceableCollectionType", "subscript"]
+- !private ["C12RWPickFlavor9ScoopCell", "deinit"]
+- !private ["C12RWPickFlavor9ScoopCell", "updateWithFlavor"]
+- !private ["PSs12SequenceType", "Element"]
+- !private ["PSs12SequenceType", "Generator"]
+- !private ["PSs12SequenceType", "Index"]
+- !private ["PSs12SequenceType", "SubSequence"]
+- !private ["PSs12SequenceType", "_Element"]
+- !private ["PSs12SequenceType", "count"]
+- ["PSs12SequenceType", "init"]
+- !private ["PSs12SequenceType", "subscript"]
+- !private ["PSs17SignedIntegerType", "Distance"]
+- !private ["PSs17SignedIntegerType", "IntegerLiteralType"]
+- !private ["PSs16SignedNumberType", "Distance"]
+- !private ["PSs16SignedNumberType", "IntegerLiteralType"]
+- !private ["VSs5Slice", "Generator"]
+- !private ["VSs5Slice", "Index"]
+- !private ["VSs5Slice", "SubSequence"]
+- !private ["VSs5Slice", "_Element"]
+- !private ["PSs10Strideable", "Distance"]
+- !private ["PSs10Strideable", "IntegerLiteralType"]
+- !private ["PSo29UIAccessibilityIdentification", "dequeueReusableCellWithReuseIdentifier"]
+- !private ["PSo29UIAccessibilityIdentification", "updateWithFlavor"]
+- !private ["PSo12UIAppearance", "dequeueReusableCellWithReuseIdentifier"]
+- !private ["PSo12UIAppearance", "updateWithFlavor"]
+- !private ["PSo21UIAppearanceContainer", "dequeueReusableCellWithReuseIdentifier"]
+- !private ["PSo21UIAppearanceContainer", "updateWithFlavor"]
+- !private ["CSo24UICollectionReusableView", "updateWithFlavor"]
+- !private ["CSo16UICollectionView", "dequeueReusableCellWithReuseIdentifier"]
+- !private ["CSo20UICollectionViewCell", "deinit"]
+- !private ["CSo20UICollectionViewCell", "updateWithFlavor"]
+- ["PSo26UICollectionViewDataSource", "Flavor"]
+- !private ["PSo26UICollectionViewDataSource", "Identifiers"]
+- ["PSo26UICollectionViewDataSource", "collectionView"]
+- !private ["PSo26UICollectionViewDataSource", "configureScoopCell"]
+- !private ["PSo26UICollectionViewDataSource", "flavors"]
+- ["PSo26UICollectionViewDataSource", "numberOfSectionsInCollectionView"]
+- !private ["PSo26UICollectionViewDataSource", "scoopCellAtIndexPath"]
+- ["PSo26UICollectionViewDataSource", ""]
+- !private ["PSo17UICoordinateSpace", "dequeueReusableCellWithReuseIdentifier"]
+- !private ["PSo17UICoordinateSpace", "updateWithFlavor"]
+- !private ["PSo13UIDynamicItem", "dequeueReusableCellWithReuseIdentifier"]
+- !private ["PSo13UIDynamicItem", "updateWithFlavor"]
+- !private ["PSo18UIFocusEnvironment", "dequeueReusableCellWithReuseIdentifier"]
+- !private ["PSo18UIFocusEnvironment", "updateWithFlavor"]
+- !private ["CSo11UIResponder", "dequeueReusableCellWithReuseIdentifier"]
+- !private ["CSo11UIResponder", "updateWithFlavor"]
+- !private ["CSo12UIScrollView", "dequeueReusableCellWithReuseIdentifier"]
+- !private ["PSo18UITraitEnvironment", "dequeueReusableCellWithReuseIdentifier"]
+- !private ["PSo18UITraitEnvironment", "updateWithFlavor"]
+- !private ["CSo6UIView", "dequeueReusableCellWithReuseIdentifier"]
+- !private ["CSo6UIView", "updateWithFlavor"]
+- !private ["PSs10_ArrayType", "Generator"]
+- !private ["PSs10_ArrayType", "Index"]
+- !private ["PSs10_ArrayType", "SubSequence"]
+- !private ["PSs10_ArrayType", "count"]
+- ["PSs10_ArrayType", "init"]
+- !private ["PSs10_ArrayType", "subscript"]
+- !private ["PSs33_BuiltinIntegerLiteralConvertible", "Distance"]
+- !private ["PSs33_BuiltinIntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["PSs24_DestructorSafeContainer", "Generator"]
+- !private ["PSs24_DestructorSafeContainer", "Index"]
+- !private ["PSs24_DestructorSafeContainer", "SubSequence"]
+- !private ["PSs24_DestructorSafeContainer", "count"]
+- ["PSs24_DestructorSafeContainer", "init"]
+- !private ["PSs24_DestructorSafeContainer", "subscript"]
+- !private ["PSs14_Incrementable", "Distance"]
+- !private ["PSs14_Incrementable", "IntegerLiteralType"]
+- !private ["PSs22_IntegerArithmeticType", "Distance"]
+- !private ["PSs22_IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["PSs12_IntegerType", "Distance"]
+- !private ["PSs12_IntegerType", "IntegerLiteralType"]
+- !private ["PSs21_ObjectiveCBridgeable", "Distance"]
+- !private ["PSs21_ObjectiveCBridgeable", "Generator"]
+- !private ["PSs21_ObjectiveCBridgeable", "Index"]
+- !private ["PSs21_ObjectiveCBridgeable", "IntegerLiteralType"]
+- !private ["PSs21_ObjectiveCBridgeable", "SubSequence"]
+- !private ["PSs21_ObjectiveCBridgeable", "count"]
+- ["PSs21_ObjectiveCBridgeable", "init"]
+- !private ["PSs21_ObjectiveCBridgeable", "subscript"]
+- !private ["PSs22_RandomAccessAmbiguity", "Distance"]
+- !private ["PSs22_RandomAccessAmbiguity", "IntegerLiteralType"]
+- !private ["PSs12_Reflectable", "Distance"]
+- !private ["PSs12_Reflectable", "Generator"]
+- !private ["PSs12_Reflectable", "Index"]
+- !private ["PSs12_Reflectable", "IntegerLiteralType"]
+- !private ["PSs12_Reflectable", "SubSequence"]
+- !private ["PSs12_Reflectable", "count"]
+- !private ["PSs12_Reflectable", "dequeueReusableCellWithReuseIdentifier"]
+- ["PSs12_Reflectable", "init"]
+- !private ["PSs12_Reflectable", "subscript"]
+- !private ["PSs12_Reflectable", "updateWithFlavor"]
+- !private ["PSs18_SignedIntegerType", "Distance"]
+- !private ["PSs18_SignedIntegerType", "IntegerLiteralType"]
+- !private ["PSs11_Strideable", "Distance"]
+- !private ["PSs11_Strideable", "IntegerLiteralType"]
+depends-nominal:
+- "PSs9AnyObject"
+- "Sa"
+- "PSs23ArrayLiteralConvertible"
+- !private "VSs10ArraySlice"
+- !private "PSs22BidirectionalIndexType"
+- !private "PSs21BitwiseOperationsType"
+- "PSs11CVarArgType"
+- "PSs14CollectionType"
+- !private "PSs10Comparable"
+- "PSs28CustomDebugStringConvertible"
+- "PSs23CustomStringConvertible"
+- "PSs9Equatable"
+- "V12RWPickFlavor6Flavor"
+- !private "P12RWPickFlavor13FlavorAdapter"
+- !private "PSs16ForwardIndexType"
+- !private "PSs13GeneratorType"
+- "PSs8Hashable"
+- "PSs9Indexable"
+- !private "VSs17IndexingGenerator"
+- !private "Si"
+- !private "PSs21IntegerArithmeticType"
+- !private "PSs25IntegerLiteralConvertible"
+- !private "PSs11IntegerType"
+- !private "PSs14MirrorPathType"
+- "PSs21MutableCollectionType"
+- "PSs16MutableIndexable"
+- "PSs16MutableSliceable"
+- !private "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- !private "CSo11NSIndexPath"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- "C12RWPickFlavor20PickFlavorDataSource"
+- !private "PSs21RandomAccessIndexType"
+- "PSs30RangeReplaceableCollectionType"
+- !private "C12RWPickFlavor9ScoopCell"
+- "PSs12SequenceType"
+- !private "PSs17SignedIntegerType"
+- !private "PSs16SignedNumberType"
+- !private "VSs5Slice"
+- !private "PSs10Strideable"
+- !private "PSo29UIAccessibilityIdentification"
+- !private "PSo12UIAppearance"
+- !private "PSo21UIAppearanceContainer"
+- !private "CSo24UICollectionReusableView"
+- !private "CSo16UICollectionView"
+- !private "CSo20UICollectionViewCell"
+- "PSo26UICollectionViewDataSource"
+- !private "PSo17UICoordinateSpace"
+- !private "PSo13UIDynamicItem"
+- !private "PSo18UIFocusEnvironment"
+- !private "CSo11UIResponder"
+- !private "CSo12UIScrollView"
+- !private "PSo18UITraitEnvironment"
+- !private "CSo6UIView"
+- "PSs10_ArrayType"
+- !private "PSs33_BuiltinIntegerLiteralConvertible"
+- "PSs24_DestructorSafeContainer"
+- !private "PSs14_Incrementable"
+- !private "PSs22_IntegerArithmeticType"
+- !private "PSs12_IntegerType"
+- "PSs21_ObjectiveCBridgeable"
+- !private "PSs22_RandomAccessAmbiguity"
+- "PSs12_Reflectable"
+- !private "PSs18_SignedIntegerType"
+- !private "PSs11_Strideable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/Ntokozo/Documents/Libraries/RWPickFlavor/RWPickFlavor/RWPickFlavor.h"
+- "/Users/Ntokozo/Documents/Libraries/RWPickFlavor/Build/Intermediates/RWPickFlavor.build/Debug-iphonesimulator/RWPickFlavor.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Users/Ntokozo/Documents/Libraries/RWPickFlavor/Build/Products/Debug-iphonesimulator/Alamofire.framework/Modules/Alamofire.swiftmodule/x86_64.swiftmodule"
+interface-hash: "3a22317a21cf48d0c8242c51f05abf00"
